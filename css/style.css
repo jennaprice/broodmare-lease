@@ -1,16 +1,15 @@
 @font-face{
   font-family: 'Source Sans Pro';
   src: 
-    url('./Source_Sans_Pro/SourceSansPro-Regular.ttf')
-    format('truetype')
-    local('Source Sans Pro')
-    local('Source-Sans-Pro');
+    url('../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf')
+    format('truetype');
+
 }
 
 @font-face{
   font-family: 'Playfair Display';
   src: 
-    url('./Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf')
+    url('../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf')
     format('truetype');
     /* local('Libre Baskerville')
     local('Libre-Baskerville'); */
@@ -19,7 +18,23 @@
 @font-face{
   font-family: 'Libre Baskerville';
   src: 
-    url('./Libre_Baskerville/LibreBaskerville-Regular.ttf')
+    url('../fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf')
+    format('truetype');
+    /* local('Libre Baskerville')
+    local('Libre-Baskerville'); */
+}
+@font-face{
+  font-family: 'Noto_Serif';
+  src: 
+    url('../fonts/Noto_Serif/NotoSerif-Regular.ttf')
+    format('truetype');
+
+}
+
+@font-face{
+  font-family: 'Special Elite';
+  src: 
+    url('../fonts/Special_Elite/SpecialElite-Regular.ttf')
     format('truetype');
     /* local('Libre Baskerville')
     local('Libre-Baskerville'); */
@@ -30,7 +45,11 @@
 }
 /* TODO: remove bradley hand */
 h1, h2, h3, h4 {
-  font-family: 'Source Sans Pro', Calibri, Verdana, sans-serif;
+  font-family: 'Source Sans Pro', Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
@@ -50,12 +69,10 @@ footer > div {
 
 nav {
   align-items: center;
-  background-color: black;
-  color: white;
+  background-color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 4px;
 
 }
 
@@ -77,6 +94,10 @@ nav ul>li {
 
 ul {
   list-style-type: none;
+}
+#contact-owner .row{
+  display: flex;
+  justify-content: space-evenly;
 }
 
 #features ul {
@@ -132,6 +153,9 @@ font-weight: 300;
   margin: 0 15vw;
 }
 
+#main-img img {
+  max-width: 100%;
+}
 #pedigree {
   width: 100%;
 }
@@ -140,13 +164,20 @@ font-weight: 300;
   margin-top: .5em;
 }
 
+#thumbnail-col{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
 .blue {
   color: blue;
 }
 
-.brand {
-  color: powderblue;
-  font-size: 22px;
+.brand img{
+  border-radius: 4px;
+  margin-left: 3rem;
+  max-width: 170px;
 }
 
 .brown {
@@ -157,14 +188,31 @@ font-weight: 300;
   background-color: rgb(108, 202, 108);
   border: 1px solid rgb(52, 71, 52);
   border-radius: 2px;
-  font-family: 'Source Sans Pro', Verdana;
+  font-family: 'Source Sans Pro', 'Bradley Hand';
   padding: 1em;
   text-align: center;
-  width: 200px;
+  width: 150px;
 }
+
+.button:hover {
+  background-color: rgb(121, 228, 121);
+  border: 1px solid rgb(79, 107, 79);
+}
+
+.fa-star:hover {
+  color:gold;
+}
+
+.foal {
+  font-family: 'Libre Baskerville';
+  text-align: center;
+}
+
 .green {
   color: green;
 }
+
+
 .horse-data h1,
 .horse-data h3 {
   display: inline;
@@ -201,7 +249,8 @@ font-weight: 300;
   flex-direction: column;
   padding: .25rem;
   text-align: center;
-  width: 250px;
+  /* width: 250px; */
+  width: 23vw;
 }
 
 .pedigree-outline-left {
@@ -236,6 +285,7 @@ font-weight: 300;
 .row {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .section h2 {
@@ -253,6 +303,11 @@ font-weight: 300;
   display: block;
   font-size: 14px;
   padding-top: 5px;
+}
+
+.thumbnail {
+  margin: .5em;
+  max-width: 20vw;
 }
 
 .two-thirds {
