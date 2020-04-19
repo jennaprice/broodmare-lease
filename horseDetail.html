@@ -26,18 +26,20 @@
       </ul>
     </div>
   </nav>
-  <div id="main-img" class="row">
-    <div class="">
-      <img src="./img/SamplePictureHorse16-9.jpg" alt="sample horse picture">
-    </div>
-    <div class="">
-      <div id="thumbnail-col">
-        <img src="http://placeimg.com/224/126/animals" class="thumbnail" alt="">
-        <img src="http://placeimg.com/224/126/animals" class="thumbnail" alt="">
-        <img src="http://placeimg.com/224/126/animals" class="thumbnail" alt="">
-        <iframe width="224" height="126" src="https://www.youtube.com/embed/-Z1CIMMcsJs" class="thumbnail"
-          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
+  <div id="hero">
+    <div id="main-img" class="row">
+      <div class="">
+        <img src="./img/SamplePictureHorse16-9.jpg" alt="sample horse picture">
+      </div>
+      <div class="">
+        <div id="thumbnail-col">
+          <img src="http://placeimg.com/224/126/animals" class="thumbnail" alt="">
+          <img src="http://placeimg.com/224/126/animals" class="thumbnail" alt="">
+          <img src="http://placeimg.com/224/126/animals" class="thumbnail" alt="">
+          <iframe width="224" height="126" src="https://www.youtube.com/embed/-Z1CIMMcsJs" class="thumbnail"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
       </div>
     </div>
   </div>
@@ -71,7 +73,6 @@
         </div>
       </div>
     </div>
-    <!-- The h4 need to be changed to divs and the text styled -->
     <div id="pedigree" class="section">
       <h2> Pedigree</h2>
       <div id="pedigree-table">
@@ -138,6 +139,25 @@
           </div>
         </div>
       </div>
+      <h3> <i class="fas fa-chevron-right"></i> View Expanded Pedigree </h3>
+
+    </div>
+    <div id="horse-records" class="section">
+      <h2> Horse Health Records</h2>
+      <hr>
+      <div class="tabs">
+        <ul>
+          <li> <a href="#genetic-testing"> Genetic Testing </a></li>
+          <li> <a href="#known-conditions"> Known Conditions </a></li>
+          <li> <a href="#wellness"> Wellness </a></li>
+          <li> <a href="#x-rays"> X-Rays </a></li>
+        </ul>
+        <div id="genetic-testing"></div>
+        <div id="known-conditions"></div>
+        <div id="wellness"></div>
+        <div id="x-rays"></div>
+
+      </div>
     </div>
     <div id="description" class="section">
       <h2> Description</h2>
@@ -182,11 +202,11 @@
       <h2> Interested in this mare?</h2>
       <hr>
       <div class="row">
-        <div class="button">
+        <div class="button btn-green">
           Contact Owner
         </div>
-        <div class="button">
-          Add to Favorites
+        <div class="button btn-gold-outline">
+          <i class="far fa-star"></i> Add Favorite
         </div>
       </div>
     </div>
@@ -222,7 +242,19 @@
     </div>
 
   </footer>
-  <script src="" async defer></script>
+  <script type="module" async defer>
+    toggleFavorite() {
+
+    }
+
+    expandPedigree() {
+
+    }
+
+    chooseDataTab() {
+
+    }
+  </script>
 </body>
 
 </html>
