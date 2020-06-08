@@ -1,50 +1,44 @@
-@font-face{
+@font-face {
   font-family: 'Source Sans Pro';
-  src: 
-    url('../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf')
+  src: url('../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf')
     format('truetype');
-
 }
 
-@font-face{
+@font-face {
   font-family: 'Playfair Display';
-  src: 
-    url('../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf')
+  src: url('../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf')
     format('truetype');
-    /* local('Libre Baskerville')
+  /* local('Libre Baskerville')
     local('Libre-Baskerville'); */
 }
 
-@font-face{
+@font-face {
   font-family: 'Libre Baskerville';
-  src: 
-    url('../fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf')
+  src: url('../fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf')
     format('truetype');
-    /* local('Libre Baskerville')
+  /* local('Libre Baskerville')
     local('Libre-Baskerville'); */
 }
-@font-face{
+@font-face {
   font-family: 'Noto_Serif';
-  src: 
-    url('../fonts/Noto_Serif/NotoSerif-Regular.ttf')
-    format('truetype');
-
+  src: url('../fonts/Noto_Serif/NotoSerif-Regular.ttf') format('truetype');
 }
 
-@font-face{
+@font-face {
   font-family: 'Special Elite';
-  src: 
-    url('../fonts/Special_Elite/SpecialElite-Regular.ttf')
-    format('truetype');
-    /* local('Libre Baskerville')
+  src: url('../fonts/Special_Elite/SpecialElite-Regular.ttf') format('truetype');
+  /* local('Libre Baskerville')
     local('Libre-Baskerville'); */
 }
 
 * {
-  font-family: 'Libre Baskerville', 'Bradley Hand', 'Bradley Hand Bold',serif;
+  font-family: 'Libre Baskerville', 'Bradley Hand', 'Bradley Hand Bold', serif;
 }
 /* TODO: remove bradley hand */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: 'Source Sans Pro', Verdana, sans-serif;
 }
 
@@ -63,7 +57,7 @@ footer {
 }
 
 footer > div {
-  margin:auto;
+  margin: auto;
   padding: 1em;
 }
 
@@ -80,7 +74,7 @@ nav {
 
 nav h4 {
   margin: 0;
-  padding: .5em;
+  padding: 0.5em;
 }
 
 nav ul {
@@ -89,7 +83,7 @@ nav ul {
   flex-direction: row;
 }
 
-nav ul>li {
+nav ul > li {
   font-size: 18px;
   margin-left: 15px;
 }
@@ -97,28 +91,32 @@ nav ul>li {
 ul {
   list-style-type: none;
 }
-#contact-owner .row{
+#contact-owner .row {
   display: flex;
   justify-content: space-evenly;
+}
+
+#contract-terms ul li {
+  padding: 0.25em;
 }
 
 #features ul {
   font-size: 22px;
 }
 
-#hero{
+#hero {
   margin-top: 85px;
 }
 
-#horse-features ul{
+#horse-features ul {
   font-size: 20px;
   list-style-type: none;
-  margin-top: .5em;
+  margin-top: 0.5em;
   padding: 0;
 }
 
 #horse-features ul > li {
-  padding: .25em;
+  padding: 0.25em;
 }
 
 #horse-title {
@@ -127,11 +125,11 @@ ul {
   flex-direction: row;
   justify-content: space-between;
   padding-top: 1.5em;
-
 }
 
-#horse-title h1, #horse-title h3{
-font-weight: 300;
+#horse-title h1,
+#horse-title h3 {
+  font-weight: 300;
 }
 
 #horse-title span {
@@ -144,6 +142,10 @@ font-weight: 300;
   margin: 0 1em;
 }
 
+#horse-records > #tabs:not(.active) {
+  display: none;
+}
+
 #horse-records ul {
   align-items: center;
   display: flex;
@@ -152,15 +154,15 @@ font-weight: 300;
   list-style-type: none;
 }
 
-#horse-records ul > li{
+#horse-records ul > li {
   border-left: 1px solid black;
   border-radius: 2px;
   border-right: black 1px solid;
   border-top: 1px solid black;
-  padding: .25em;
+  padding: 0.25em;
 }
 
-#horse-records ul > li a{
+#horse-records ul > li a {
   color: black;
 }
 
@@ -182,10 +184,10 @@ font-weight: 300;
 }
 
 #pedigree-table {
-  margin-top: .5em;
+  margin-top: 0.5em;
 }
 
-#thumbnail-col{
+#thumbnail-col {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -195,51 +197,10 @@ font-weight: 300;
   color: blue;
 }
 
-.brand img{
-  border-radius: 4px;
-  margin-left: 3rem;
-  max-width: 170px;
+.brand img {
+  max-width: 150px;
+  border-radius: 3px;
 }
-
-.brown {
-  color: rgb(175, 95, 48);
-}
-
-.button {
-
-  border-radius: 2px;
-  cursor: pointer;
-  font-family: 'Source Sans Pro', 'Bradley Hand';
-  padding: 1em;
-  text-align: center;
-  width: 150px;
-}
-
-.btn-green {
-  background-color: rgb(108, 202, 108);
-  border: 1px solid rgb(52, 71, 52);
-
-}
-
-.btn-green:hover {
-  background-color: rgb(121, 228, 121);
-  border: 1px solid rgb(79, 107, 79);
-}
-
-.btn-gold-outline {
-  border: solid 3px rgb(199, 169, 0);
-  color:rgb(151, 129, 0);
-  font-weight: 800;
-}
-
-.btn-gold-outline:hover {
-  border: solid 3px rgb(151, 129, 0);
-  color: black;
-}
-.fa-star:hover {
-  color:rgb(199, 169, 0);
-}
-
 .foal {
   font-family: 'Libre Baskerville';
   text-align: center;
@@ -248,7 +209,6 @@ font-weight: 300;
 .green {
   color: green;
 }
-
 
 .horse-data h1,
 .horse-data h3 {
@@ -267,12 +227,9 @@ font-weight: 300;
 .one-third {
   align-items: center;
   display: flex;
-  width:33%;
+  width: 33%;
 }
 
-.p-1 {
-  padding: .25em;
-}
 .pedigree-row {
   display: flex;
   text-align: center;
@@ -280,11 +237,11 @@ font-weight: 300;
 
 .pedigree-box {
   align-items: center;
-  border: .5px solid grey;
+  border: 0.5px solid grey;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  padding: .25rem;
+  padding: 0.25rem;
   text-align: center;
   /* width: 250px; */
   width: 23vw;
@@ -343,7 +300,7 @@ font-weight: 300;
 }
 
 .thumbnail {
-  margin: .5em;
+  margin: 0.5em;
   max-width: 20vw;
 }
 
