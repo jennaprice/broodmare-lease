@@ -148,21 +148,29 @@
     <div id="horse-records" class="section">
       <h2> Horse Health Records</h2>
       <hr>
-      <ul>
-        <li> <a href="#genetic-testing"> Genetic Testing </a></li>
-        <li> <a href="#known-conditions"> Known Conditions </a></li>
-        <li> <a href="#wellness"> Wellness </a></li>
-        <li> <a href="#x-rays"> X-Rays </a></li>
+      <ul id="horse-records-tabs" class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation"> 
+          <a id="genetic-testing-tab" data-toggle="tab" role="tab" aria-controls="genetic-testing" aria-selected="true" href="#genetic-testing-content"> Genetic Testing </a>
+        </li>
+        <li class="nav-item" role="presentation"> 
+          <a id="known-conditions-tab" data-toggle="tab" role="tab" aria-controls="known-conditions" aria-selected="false" href="#known-conditions-content"> Known Conditions </a>
+        </li>
+        <li class="nav-item" role="presentation"> 
+          <a id="wellness-tab" data-toggle="tab" role="tab" aria-controls="wellness" aria-selected="false" href="#wellness-content"> Wellness </a>
+        </li>
+        <li class="nav-item" role="presentation"> 
+          <a id="x-rays-tab" data-toggle="tab" role="tab" aria-controls="x-rays" aria-selected="false" href="#x-rays-content"> X-Rays </a>
+        </li>
       </ul>
-      <div id="tabs">
-        <div data-tab="genetic-testing" class="active">
+      <div id="horse-records-content" class="tab-content" >
+        <div id="genetic-testing-content" class="tab-pane fade show active" role="tab-panel" aria-labelledby="genetic-testing-tab">
           Genetic Testing results:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna
           aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
           consequat."
         </div>
-        <div data-tab="known-conditions">
+        <div id="known-conditions-content" class="tab-pane fade" role="tab-panel" aria-labelledby="known-conditions-tab">
           Known Conditions:
 
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -170,19 +178,22 @@
           aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
           consequat."
         </div>
-        <div data-tab="wellness">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat."
-        </div>
-        <div data-tab="x-rays">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat."
-        </div>
+        <div id="wellness-content" class="tab-pane fade" role="tab-panel" aria-labelledby="wellness-tab">
+          Wellness:
 
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat."
+        </div>
+        <div id="x-rays-content" class="tab-pane fade" role="tab-panel" aria-labelledby="x-rays-tab">
+          X-Rays
+
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat."
+        </div>
       </div>
     </div>
     <div id="description" class="section">
